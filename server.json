@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.polyrama/mcp",
   "title": "Polyrama",
-  "description": "Research Polymarket and Kalshi markets, public traders, signals, and paper strategies through ten typed tools",
+  "description": "Research Polymarket and Kalshi markets, traders, signals, backtests, and paper orders.",
   "version": "1.0.0",
   "websiteUrl": "https://polyrama.io/mcp",
   "repository": {
