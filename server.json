@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.polyrama/mcp",
+  "title": "Polyrama",
+  "description": "Research Polymarket and Kalshi markets, public traders, signals, and paper strategies through ten typed tools",
+  "version": "1.0.0",
+  "websiteUrl": "https://polyrama.io/mcp",
+  "repository": {
+    "url": "https://github.com/Polyrama/mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@polyrama/mcp",
+      "version": "1.0.0",
+      "runtimeHint": "npx",
+      "environmentVariables": [
+        {
+          "name": "POLYRAMA_API_TOKEN",
+          "description": "Polyrama API token created at polyrama.io/api",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ],
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

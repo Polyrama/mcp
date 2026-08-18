@@ -1,0 +1,77 @@
+{
+  "name": "@polyrama/mcp",
+  "version": "1.0.0",
+  "mcpName": "io.polyrama/mcp",
+  "description": "Official MCP server for Polymarket and Kalshi research with Polyrama.",
+  "license": "MIT",
+  "type": "module",
+  "homepage": "https://polyrama.io/mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Polyrama/mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Polyrama/mcp/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "prediction-markets",
+    "polymarket",
+    "kalshi",
+    "trading",
+    "market-data",
+    "ai-agents",
+    "claude",
+    "codex"
+  ],
+  "bin": {
+    "polyrama-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./client": {
+      "types": "./dist/client.d.ts",
+      "import": "./dist/client.js"
+    },
+    "./tools": {
+      "types": "./dist/tools.d.ts",
+      "import": "./dist/tools.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md",
+    "server.json"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.json && node scripts/prepare-bin.mjs",
+    "typecheck": "tsc --noEmit --project tsconfig.json && tsc --noEmit --project tsconfig.test.json",
+    "test": "node --import tsx --test tests/**/*.test.ts",
+    "check": "npm run typecheck && npm test && npm run build",
+    "start": "node dist/index.js",
+    "prepack": "npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  }
+}
