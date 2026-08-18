@@ -8,7 +8,7 @@ import { CallToolRequestSchema, ListToolsRequestSchema } from "@modelcontextprot
 import { PolyramaClient } from "./client.js";
 import { toolByName, tools } from "./tools.js";
 
-export const PACKAGE_VERSION = "1.0.0";
+export const PACKAGE_VERSION = "1.0.1";
 
 export interface ServerOptions {
   apiToken: string;

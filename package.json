@@ -1,7 +1,7 @@
 {
   "name": "@polyrama/mcp",
-  "version": "1.0.0",
-  "mcpName": "io.polyrama/mcp",
+  "version": "1.0.1",
+  "mcpName": "io.github.Polyrama/mcp",
   "description": "Official MCP server for Polymarket and Kalshi research with Polyrama.",
   "license": "MIT",
   "type": "module",

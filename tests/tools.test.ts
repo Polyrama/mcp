@@ -45,5 +45,5 @@ test("server and package versions remain synchronized", async () => {
     mcpName: string;
   };
   assert.equal(PACKAGE_VERSION, packageJson.version);
-  assert.equal(packageJson.mcpName, "io.polyrama/mcp");
+  assert.equal(packageJson.mcpName, "io.github.Polyrama/mcp");
 });
